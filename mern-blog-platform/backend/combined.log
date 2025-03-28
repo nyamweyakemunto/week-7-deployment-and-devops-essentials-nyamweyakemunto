@@ -1,0 +1,2 @@
+{"level":"info","message":"Server running on port 5000","service":"blog-api","timestamp":"2025-03-28T13:50:24.349Z"}
+{"level":"info","message":"MongoDB connected successfully","service":"blog-api","timestamp":"2025-03-28T13:50:24.462Z"}

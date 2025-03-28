@@ -1,3 +1,4 @@
+
 **Week 7: Deployment and DevOps for MERN Applications**
 
 **Objective:**
@@ -63,4 +64,6 @@
 - Effective use of monitoring and logging tools.
 - Secure handling of environment variables.
 - Clear and structured documentation.
+
+
 

@@ -1,0 +1,82 @@
+/* src/App.css */
+
+/* Base reset and global styles */
+:root {
+  --primary-bg: #282c34;
+  --accent-color: #61dafb;
+}
+
+/* Reduced motion preference handling */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* App container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Header section */
+.app-header {
+  background-color: var(--primary-bg);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Logo styles */
+.app-logo {
+  height: clamp(120px, 40vmin, 300px);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Animation for logo - only if motion is preferred */
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo--animated {
+    animation: logo-spin 20s linear infinite;
+  }
+}
+
+/* Link styles */
+.app-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: lighten(var(--accent-color), 10%);
+    text-decoration: underline;
+  }
+}
+
+/* Keyframes */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.full-viewport {
+  min-height: 100vh;
+}
